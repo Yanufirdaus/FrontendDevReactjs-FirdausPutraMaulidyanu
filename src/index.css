@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.filter-border {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.select.is-borderless {
+  border: none;
+  border-bottom: 1px solid #818181;
+  border-radius: 0;
+}
+
+.select.is-borderless select {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+.select.is-borderless select:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.filter-toggle input {
+  display: none;
+}
+
+.filter-toggle .checkmark {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50px;
+}
+
+.filter-toggle input:checked + .checkmark {
+  background-color: #3273dc;
+  border-color: #3273dc;
+}
+
+.star-rating {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.stars-back {
+  color: #dbdbdb;
+}
+
+.stars-front {
+  color: #ffb400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  height: 360px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
