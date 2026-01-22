@@ -3,10 +3,10 @@ Project ini menggunakan react dengan versi 19.2.3
 
 Project ini di inisiasi menggunakan package NPM
 
-Untuk kebutuhan state management project ini menggunakan redux
-beberapa package lain yang digunakan yaitu axios sebagai pembantu dalam menyambungkan frontend dengan api
-project ini menggunakan bulma sebagai framework styling
-project ini juga menggunakan package leaflet untuk menampilan map pada halaman detail restoran
+Untuk kebutuhan state management project ini menggunakan redux <br>
+beberapa package lain yang digunakan yaitu axios sebagai pembantu dalam menyambungkan frontend dengan api <br>
+project ini menggunakan bulma sebagai framework styling <br>
+project ini juga menggunakan package leaflet untuk menampilan map pada halaman detail restoran <br>
 
 
 
