@@ -9,10 +9,16 @@ const DetailResto = () => {
   const { id } = useParams();
   const [restaurant, setRestaurant] = useState(null);
 
-  const navigate = useNavigate();
-    useEffect(() => {
-    fetchRestaurantDetails();
-  }, [id]);
+  useEffect(() => {
+    async function load() {
+      try {
+        await fetchRestaurantDetails();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    load();
+  }, []);
 
   const fetchRestaurantDetails = async () => {
     try {
