@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import HeaderDashboard from "../components/HeaderDashboard";
 import { Riple } from "react-loading-indicators";
 import DetailPage from "../components/DetailPage";
@@ -9,10 +9,12 @@ const DetailResto = () => {
   const { id } = useParams();
   const [restaurant, setRestaurant] = useState(null);
 
-  const navigate = useNavigate();
-    useEffect(() => {
-    fetchRestaurantDetails();
-  }, [id]);
+  useEffect(() => {
+    async function load() {
+        await fetchRestaurantDetails(); // ambil data di sini
+    }
+    load();
+    }, []);
 
   const fetchRestaurantDetails = async () => {
     try {
